@@ -3,6 +3,8 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import MainProvider from '@/contexts/MainContext';
 import AsideNavbar from '@/components/shared-component/AsideNavbar';
+import Navbar from '@/components/shared-component/Navbar';
+import Footer from '@/components/shared-component/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,11 +19,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <MainProvider>
           <TopNavbar />
+          <Navbar />
           {/* Responsive Navbar */}
           <div>
             <AsideNavbar />
           </div>
           {children}
+          <Footer />
         </MainProvider>
       </body>
     </html>
