@@ -14,4 +14,9 @@ export const navLiks = [
     title: 'Shop',
     link: 'shop',
   },
+  {
+    id: '4',
+    title: 'Contact',
+    link: 'contact',
+  },
 ];

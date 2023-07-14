@@ -57,6 +57,9 @@ input[type='radio'] {
 .sale-image {
   background-image: url('../../public/sale.jpg');
 }
+.hero-landing {
+  background-image: url('../../public/hero-landing.jpg');
+}
 .container {
   max-width: 1140px;
   padding-right: 15px;
