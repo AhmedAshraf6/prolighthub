@@ -28,7 +28,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit}>
       <div className='container'>
         <div className='flex flex-col  gap-y-5'>
-          <h2 className='head '>We 'd Love To Hear From U</h2>
+          <h2 className='head '>We wouid Love To Hear From U</h2>
           <InputField
             label='First & Last Name'
             type='text'
