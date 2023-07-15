@@ -1,13 +1,12 @@
 'use client';
 import { useMainContext } from '@/contexts/MainContext';
 import { navLiks } from '@/util/constants';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import NavLink from './NavLink';
 export default function AsideNavbar() {
   const { navbar, detectNavbar } = useMainContext();
-  const [activeNav, setActiveNav] = useState('1');
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -27,20 +26,7 @@ export default function AsideNavbar() {
           />
         </div>
         <ul className='flex flex-col gap-y-5 px-3 text-white'>
-          {navLiks &&
-            navLiks.map((nav) => (
-              <Link
-                className={`font-bold cursor-pointer hover:text-primary transition duration-200 ${
-                  activeNav == nav.id && 'text-primary'
-                }`}
-                key={nav.id}
-                onClick={() => setActiveNav(nav.id)}
-                href={nav.link}
-                aria-label='title'
-              >
-                {nav.title}
-              </Link>
-            ))}
+          {navLiks && navLiks.map((nav) => <NavLink {...nav} key={nav.id} />)}
           {/* Dropdown */}
           <div className='relative inline-block '>
             <div>

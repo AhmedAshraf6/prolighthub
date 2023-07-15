@@ -9,6 +9,7 @@ import { BiSearch } from 'react-icons/bi';
 
 import CartButton from './CartButton';
 import { useMainContext } from '@/contexts/MainContext';
+import Link from 'next/link';
 export default function TopNavbar() {
   const { detectNavbar, navbar, amount } = useMainContext();
 
@@ -25,7 +26,7 @@ export default function TopNavbar() {
           onClick={() => detectNavbar(true)}
         />
 
-        <div>
+        <Link href='/'>
           <Image
             src='/log.png'
             width={60}
@@ -33,11 +34,16 @@ export default function TopNavbar() {
             alt='logo-prolighthub'
             className='max-w-full h-auto object-contain'
           />
-        </div>
+        </Link>
 
         <div className='flex items-center gap-5  '>
           <BiSearch className='hidden lg:block cursor-pointer hover:text-primary smooth text-2xl' />
-          <CgProfile className='hidden lg:block cursor-pointer hover:text-primary smooth text-2xl' />
+          <Link href='/profile'>
+            <CgProfile className='hidden lg:block cursor-pointer hover:text-primary smooth text-2xl' />
+          </Link>
+          <Link href='/signin' className='hidden lg:block btn-primary'>
+            Sign in
+          </Link>
           <CartButton count='1' />
         </div>
       </nav>

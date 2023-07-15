@@ -23,6 +23,7 @@ export default function Slider() {
             className='w-100 h-100'
             width='1000'
             height='1000'
+            alt='image'
           />
 
           <div className='relative'></div>

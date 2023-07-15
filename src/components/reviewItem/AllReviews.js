@@ -17,6 +17,7 @@ export default function AllReviews() {
             width='100'
             height='100'
             className='rounded-full w-[50px] h-[50px] object-cover'
+            alt='review'
           />
           <div className='flex flex-col gap-y-3 sm:gap-y-5 w-full'>
             <div className='flex justify-between items-center flex-wrap'>

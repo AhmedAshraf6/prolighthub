@@ -7,16 +7,16 @@ export const navLiks = [
   {
     id: '2',
     title: 'About',
-    link: 'about',
+    link: '/about',
   },
   {
     id: '3',
     title: 'Shop',
-    link: 'shop',
+    link: '/shop',
   },
   {
     id: '4',
     title: 'Contact',
-    link: 'contact',
+    link: '/contact',
   },
 ];

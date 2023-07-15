@@ -1,11 +1,10 @@
 'use client';
 import { navLiks } from '@/util/constants';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import NavLink from './NavLink';
 
 export default function Navbar() {
-  const [activeNav, setActiveNav] = useState('1');
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -13,20 +12,7 @@ export default function Navbar() {
   };
   return (
     <nav className='hidden lg:flex justify-center items-center gap-10 my-5'>
-      {navLiks &&
-        navLiks.map((nav) => (
-          <Link
-            className={`font-bold cursor-pointer hover:text-primary transition duration-200 ${
-              activeNav == nav.id && 'text-primary'
-            }`}
-            key={nav.id}
-            onClick={() => setActiveNav(nav.id)}
-            href={nav.link}
-            aria-label='title'
-          >
-            {nav.title}
-          </Link>
-        ))}
+      {navLiks && navLiks.map((nav) => <NavLink {...nav} key={nav.id} />)}
       {/* Dropdown */}
       <div className='relative inline-block z-20'>
         <div>
