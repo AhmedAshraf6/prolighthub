@@ -41,9 +41,9 @@ export default function page() {
         </div>
       </div>
       {/* Contact Us*/}
-      <div className='mt-5 sm:mt-16'>
+      <div className='mt-5 sm:mt-28'>
         <div className='container'>
-          <div className='flex items-center justify-start gap-x-5 gap-y-4'>
+          <div className='grid md:grid-cols-2 gap-x-5 gap-y-4'>
             <Map />
             <ContactForm />
           </div>

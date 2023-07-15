@@ -5,7 +5,8 @@ import MainProvider from '@/contexts/MainContext';
 import AsideNavbar from '@/components/shared-component/AsideNavbar';
 import Navbar from '@/components/shared-component/Navbar';
 import Footer from '@/components/shared-component/Footer';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           </div>
           {children}
           <Footer />
+          <ToastContainer position='top-center' />
         </MainProvider>
       </body>
     </html>

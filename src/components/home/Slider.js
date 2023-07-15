@@ -1,17 +1,13 @@
 'use client';
-import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {
-  EffectFade,
-  Autoplay,
-  Navigation,
-  Pagination,
-} from 'swiper';
-import 'swiper/css/bundle';
+
+import { Navigation, EffectFade, Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 import Image from 'next/image';
 export default function Slider() {
-  SwiperCore.use([Autoplay, Navigation, Pagination]);
-
   return (
     <>
       <Swiper
@@ -19,7 +15,7 @@ export default function Slider() {
         navigation
         pagination={{ type: 'progressbar' }}
         effect='fade'
-        modules={[EffectFade]}
+        modules={[Navigation, EffectFade]}
       >
         <SwiperSlide className='w-100 h-100'>
           <Image

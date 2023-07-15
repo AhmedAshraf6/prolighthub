@@ -12,6 +12,7 @@ export default function MainProvider({ children }) {
   const detectNavbar = (val) => {
     dispatch({ type: DETECT_NAVBAR, payload: val });
   };
+
   return (
     <MainContext.Provider value={{ ...state, detectNavbar }}>
       {children}
