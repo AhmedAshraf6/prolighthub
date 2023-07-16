@@ -10,13 +10,13 @@ export default function InputField({
   requried,
 }) {
   return (
-    <div class='mb-4'>
-      <label class='block text-gray-700 font-bold mb-2' htmlFor={name}>
+    <div className='mb-4'>
+      <label className='block text-gray-700 font-bold mb-2' htmlFor={name}>
         {label}{' '}
         {requried && <span className='text-[#ff000080] text-lg'>*</span>}
       </label>
       <input
-        class='form-input w-full border-2 py-1 sm:py-3 px-1 sm:px-2 border-gray-300 focus:border-yellow-400 outline-none'
+        className='form-input w-full border-2 py-1 sm:py-3 px-1 sm:px-2 border-gray-300 focus:border-yellow-400 outline-none'
         id={labelfor}
         name={name}
         type={type}

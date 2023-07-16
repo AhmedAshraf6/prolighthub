@@ -15,9 +15,9 @@ export default function ReviewForm() {
           </span>
           <StarRating />
         </div>
-        <div class='mt-3 sm:mt-5 relative'>
+        <div className='mt-3 sm:mt-5 relative'>
           <textarea
-            class='form-textarea w-full  border-2 py-3 px-2 border-gray-300 focus:border-yellow-400 h-40 outline-none'
+            className='form-textarea w-full  border-2 py-3 px-2 border-gray-300 focus:border-yellow-400 h-40 outline-none'
             name='ratecomment'
             placeholder='Your review '
           ></textarea>

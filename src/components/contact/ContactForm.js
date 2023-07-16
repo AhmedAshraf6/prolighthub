@@ -52,13 +52,13 @@ export default function ContactForm() {
             handleChange={handleChange}
             value={subject}
           />
-          <div class='mb-4'>
-            <label class='block text-gray-700 font-bold mb-2' for='message'>
+          <div className='mb-4'>
+            <label className='block text-gray-700 font-bold mb-2' for='message'>
               Comment Or Message
               <span className='text-[#ff000080] text-lg'>*</span>
             </label>
             <textarea
-              class='form-textarea w-full  border-2 py-3 px-2 border-gray-300 focus:border-yellow-400 h-40 outline-none'
+              className='form-textarea w-full  border-2 py-3 px-2 border-gray-300 focus:border-yellow-400 h-40 outline-none'
               id='message'
               name='message'
               handleChange={handleChange}
