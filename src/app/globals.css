@@ -106,3 +106,8 @@ input[type='number']::-webkit-outer-spin-button {
   visibility: hidden;
   margin: 0;
 }
+
+.profile_link_container .profile_link:not(:last-child),
+.table .table-body tr:not(:last-child) {
+  @apply border-b-2 border-gray-200;
+}

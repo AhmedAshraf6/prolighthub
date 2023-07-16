@@ -1,7 +1,6 @@
 'use client';
 import HeroLanding from '@/components/profile/HeroLanding';
 import ProfileLinksContainer from '@/components/profile/ProfileLinksContainer';
-import TableOrders from '@/components/profile/TableOrders';
 import React from 'react';
 
 export default function page() {
@@ -14,9 +13,7 @@ export default function page() {
             <div className='col-span-3 md:col-span-1'>
               <ProfileLinksContainer />
             </div>
-            <div className='col-span-3 md:col-span-2 overflow-x-auto'>
-              <TableOrders />
-            </div>
+            <div className='col-span-3 md:col-span-2'>Account</div>
           </div>
         </div>
       </div>

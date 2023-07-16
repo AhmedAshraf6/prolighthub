@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import NavLink from './NavLink';
+import Link from 'next/link';
 export default function AsideNavbar() {
   const { navbar, detectNavbar } = useMainContext();
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +26,9 @@ export default function AsideNavbar() {
             onClick={() => detectNavbar(false)}
           />
         </div>
-        <ul className='flex flex-col gap-y-5 px-3 text-white'>
+        <ul className='flex flex-col items-start gap-y-5 px-3 text-white'>
           {navLiks && navLiks.map((nav) => <NavLink {...nav} key={nav.id} />)}
+
           {/* Dropdown */}
           <div className='relative inline-block '>
             <div>
@@ -82,6 +84,9 @@ export default function AsideNavbar() {
               </div>
             )}
           </div>
+          <Link href='/signin' className='btn-primary'>
+            Sign in
+          </Link>
         </ul>
       </aside>
     </>
