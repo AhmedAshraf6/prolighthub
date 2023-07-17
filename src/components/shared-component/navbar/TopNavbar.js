@@ -44,7 +44,9 @@ export default function TopNavbar() {
           <Link href='/signin' className='hidden lg:block btn-primary'>
             Sign in
           </Link>
-          <CartButton count='1' />
+          <Link href='/cart'>
+            <CartButton count='1' />
+          </Link>
         </div>
       </nav>
       <hr className='hidden lg:block text-secondary bg-secondary mx-6' />

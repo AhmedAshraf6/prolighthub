@@ -16,9 +16,9 @@ export default function InputCounter() {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative '>
       <button
-        className=' text-gray-700 rounded-sm w-6 h-6  absolute top-[10px] sm:top-[16px]  left-[4px]  flex justify-center items-center hover:bg-primary smooth text-lg'
+        className=' text-gray-700 rounded-sm w-6 h-6  absolute top-[10px] md:top-[16px]  left-[4px]  flex justify-center items-center hover:bg-primary smooth text-lg'
         onClick={decrement}
       >
         -
@@ -26,11 +26,11 @@ export default function InputCounter() {
       <input
         type='number'
         value={count}
-        className='text-center border-gray-500 border rounded-md w-[120px] py-2 sm:py-4 '
+        className='text-center border-gray-500 border rounded-md  w-[80px] md:w-[120px] py-2 md:py-4 '
         onChange={(e) => setCount(parseInt(e.target.value))}
       />
       <button
-        className=' text-gray-700 rounded-sm w-6 h-6 absolute top-[10px] sm:top-[16px] right-[4px] flex justify-center items-center hover:bg-primary smooth text-lg'
+        className=' text-gray-700 rounded-sm w-6 h-6 absolute top-[10px] md:top-[16px] right-[4px] flex justify-center items-center hover:bg-primary smooth text-lg'
         onClick={increment}
       >
         +

@@ -84,7 +84,11 @@ export default function AsideNavbar() {
               </div>
             )}
           </div>
-          <Link href='/signin' className='btn-primary'>
+          <Link
+            href='/signin'
+            className='btn-primary'
+            onClick={() => detectNavbar(false)}
+          >
             Sign in
           </Link>
         </ul>

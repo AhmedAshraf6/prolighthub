@@ -1,13 +1,13 @@
 'use client';
-import HeroLanding from '@/components/profile/HeroLanding';
 import ProfileLinksContainer from '@/components/profile/ProfileLinksContainer';
 import TableOrders from '@/components/profile/TableOrders';
+import HeroLandingWithoutImage from '@/components/shared-component/HeroLandingWithoutImage';
 import React from 'react';
 
 export default function page() {
   return (
     <>
-      <HeroLanding title='My Account' />
+      <HeroLandingWithoutImage title='My Account' />
       <div className='mt-8 sm:mt-24'>
         <div className='container'>
           <div className='grid md:grid-cols-3 gap-x-8 gap-y-5'>

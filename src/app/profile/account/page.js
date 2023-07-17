@@ -1,5 +1,5 @@
 import AccountFormEdit from '@/components/profile/AccountFormEdit';
-import HeroLanding from '@/components/profile/HeroLanding';
+import HeroLanding from '@/components/shared-component/HeroLandingWithoutImage';
 import ProfileLinksContainer from '@/components/profile/ProfileLinksContainer';
 import React from 'react';
 
